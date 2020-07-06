@@ -88,3 +88,21 @@ while user and father:
         elif num == first:
             father = False
 print()
+
+
+# 例子5：打印素数。
+"""
+**说明**：素数指的是只能被1和自身整除的正整数（不包括1）。
+"""
+
+max = int(input('输入最大范围，输出素数：'))
+
+for x in range(2,max):
+    is_false = True
+    for y in range(2,x):
+        if x % y == 0:
+            is_false = False
+            break
+    if is_false:
+        print(x)
+
